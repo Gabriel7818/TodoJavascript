@@ -1,0 +1,108 @@
+:root{
+    --corescura: #34073d;     /* Variaveis */
+    --corclara: #f70217;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    background-image: linear-gradient(to right, #8d5a17, #c0840b);
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#task-container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Form */
+#task-header{
+    margin-top: 40px;
+}
+
+#add-task-form{
+    display: flex;
+}
+
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid var(--corescura);
+    background-color: #fff;
+    color: var(--corescura);
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;    
+}
+
+#add-task-form input::placeholder{
+    color: var(--corescura)
+}
+
+#add-task-form input:focus{
+    outline: none;
+}
+
+#btn-add:hover{
+    background-color: var(--corescura);
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* Lista */
+#task-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list li{
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 2px solid #000000;
+    background-color: #fff;
+    color: #201b1b;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Alinhando a descrição de tarefa a direita */
+#task-list li .task-title{
+    margin-right: auto;
+}
+
+#task-list li p{
+    font-size: 17px;
+}
+
+.btn-done:hover{
+    color: #3bf303;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.btn-remove:hover{
+    color: #fc0606;
+    font-size: 37px;
+    transition: 0.3s;
+}
+
+.btn-remove{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#task-list li.done{
+    background-color: #f58e07;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.hide{
+    display: none !important;
+}
